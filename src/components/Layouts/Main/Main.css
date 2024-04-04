@@ -94,9 +94,7 @@ border-radius: 50%;
 margin-right: 10px;
 background-color: #ccc; /* Color inicial del círculo */
 }
-.circle.checked {
-background-color: #ff0000; /* Color del círculo cuando se marca la tarea */
-}
+
 
 input[type="checkbox"] {
 margin-left: auto; /* Colocar la verificación al final */
@@ -110,7 +108,7 @@ background-color: #fbff00;
 p{
 color: #fff;
 }
-.completed-blue {
+.completed-green {
 background-color: rgb(68, 255, 62);
 }
 
@@ -123,6 +121,5 @@ margin-bottom: 10px;
 }
 .Result{
     text-align: center;
-    margin-top: 50px;
     font-size: 40px;
 }

@@ -1,11 +1,11 @@
 
 import React from 'react'
 
-export const ItemTask = ({ task, toggleCompleted }) => {
+export const ItemTask = ({ task, taskCompleted }) => {
   return (
-    <li className={task.completed ? 'completed' : ''} onClick={() => toggleCompleted(task.id)}>
-      <div className={`circle ${task.completed ? 'completed-blue' : 'uncompleted-red'}`} />
-      <label>{task.title}: {task.description}</label>
+    <li className={task.completed ? 'completed' : ''} onClick={() => taskCompleted(task.id)}>
+      <div className={`circle ${task.completed ? 'completed-green' : 'uncompleted-red'}`} />
+      <label>{task.titleInput}: {task.descriptionInput}</label>
       <input type="checkbox" checked={task.completed} readOnly />
     </li>
   )
